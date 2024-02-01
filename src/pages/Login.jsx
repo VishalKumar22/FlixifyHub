@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 function Login() {
@@ -28,7 +28,7 @@ return (
     <div className='max-w-[450px] h-[600px] mx-auto bg-black/80 rounded-lg'>
       <div className='max-w-[320px] mx-auto py-16'>
           <h1 className='text-3xl font-nsans-bold'>
-              Sign Up
+              Login
           </h1>
 
           <form onSubmit={handleFormSubmit} className='w-full flex flex-col py-4'>
@@ -50,7 +50,7 @@ return (
               onChange={(e) => setPassword(e.target.value)}               
               />
 
-              <button className='bg-red-600 py-3 my-6 rounded font-nsans-bold'>Sign Up</button>
+              <button className='bg-red-600 py-3 my-6 rounded font-nsans-bold'>Login</button>
 
               <div className='flex justify-between items-center text-gray-600'>
                   <p>
@@ -61,9 +61,9 @@ return (
               </div>
               <p className='my-4'>
                   <span className='text-gray-600 mr-2'>
-                      Already subscribed to Netflix?
+                      New to FlixifyHub?
                   </span>
-                  <Link to='/login'>Sign In</Link>
+                  <Link to='/signup'>Sign Up</Link>
               </p>
               
           </form>
