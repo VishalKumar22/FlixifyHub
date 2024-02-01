@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className='absolute w-full p-8 flex items-center justify-between z-50'>
       <Link to='/'>
         <h1 className='text-red-600 font-bold cursor-pointer text-4xl'>
-        NETFLIX
+        FlixifyHub
         </h1>
       </Link>
 

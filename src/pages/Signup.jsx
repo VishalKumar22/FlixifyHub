@@ -11,7 +11,6 @@ const Signup = () => {
         e.preventDefault()
         console.log(email);
         console.log(password);
-
     }
 
   return (
@@ -35,7 +34,7 @@ const Signup = () => {
             <form onSubmit={handleFormSubmit} className='w-full flex flex-col py-4'>
                 <input 
                 className='p-3 my-2 bg-gray-700 rounded'
-                type="text"
+                type="email"
                 placeholder='email'
                 autoComplete='email'   
                 value={email}             
@@ -51,7 +50,8 @@ const Signup = () => {
                 onChange={(e) => setPassword(e.target.value)}               
                 />
 
-                <button className='bg-red-600 py-3 my-6 rounded font-nsans-bold'>Sign Up</button>
+                <button className='bg-red-600 py-3 my-6 rounded font-nsans-bold'>
+                  Sign Up</button>
 
                 <div className='flex justify-between items-center text-gray-600'>
                     <p>
@@ -62,7 +62,7 @@ const Signup = () => {
                 </div>
                 <p className='my-4'>
                     <span className='text-gray-600 mr-2'>
-                        Already subscribed to Netflix?
+                        Already subscribed to FlixifyHub?
                     </span>
                     <Link to='/login'>Sign In</Link>
                 </p>
