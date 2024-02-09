@@ -1,4 +1,4 @@
-FlixifyHub   ( Project Link ) 
+FlixifyHub   [Project Link](https://flixifyhub.web.app/) 
 
 Developed a Netflix clone with React.js and Firebase back-end, integrating TMDB API for data retrieval and Firebase Authentication for login functionality. 
 
